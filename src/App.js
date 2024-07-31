@@ -1,12 +1,13 @@
+import React, {useState} from 'react';
 import './App.css';
 import Tweet from './Tweet';
 
 
 function App() {
   const [users, setUsers] = useState([
-    { name='John', desc='Today with Elon musk', likes='19M' }
-    { name='Mark', desc='Protest in Nigeria 2024', likes='20k'}
-    { name='Maro', desc='Tech in 2025', likes='100k'}
+    { name:'John', desc:'Today with Elon musk', like:'19M' },
+    { name:'Mark', desc:'Protest in Nigeria 2024', likes:'20k'},
+    { name:'Maro', desc:'Tech in 2025', like:'100k'}
   ]);
   
   return (
